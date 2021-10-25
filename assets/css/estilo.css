@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+:root {
+    --cor-primaria: #262626;
+    --cor-secundaria: #5b3fbf;
+    --cor-terciaria: #9677d9;
+
+    --body-font: 'Poppins', sans-serif;
+}
+body{
+    background-color: var(--cor-primaria);
+    font-family: var(--body-font);
+}
+header{
+    margin: 10px 20px;
+}
+header .title{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header .title h1{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+header .title img{
+    width: 120px;
+    margin-left: 10px;
+}
+h1{
+    color: var(--cor-secundaria);
+}
+p{
+    margin: 0;
+    padding: 0;
+    color: var(--cor-terciaria);
+}
+hr{
+    background-color: var(--cor-secundaria);
+    height: 1px;
+}
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main .box{
+    width: 30vw;
+    margin: 40px;
+    text-align: center;
+}
+
+
+main .box .title-main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+main .box .title-main i{
+    font-size: 50px;
+    color: var(--cor-terciaria);
+}
+
+main .box .content a{
+    text-decoration: none;
+    color: white;
+}
+main .box .content a:hover{
+    color: var(--cor-terciaria);
+    transition: .2s;
+}
+
+main .box .content ul{
+    list-style: none;
+    text-align: left;
+}
+
+.rodape{
+    color: white;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.rodape a{
+    color: var(--cor-terciaria);
+    text-decoration: none;
+}
+
+@media screen and (max-width: 600px) {
+    main{
+        flex-direction: column;
+    }
+}
